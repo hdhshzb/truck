@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before{
+        content: '';
+        height: 6px;
+        width: 76px;
+        background: #C8A35F;
+        position: absolute;
+        left: 0;
+        top: -40px;
+        transform: rotate(180deg);
+    }
+
+}
+
+@import "../scss/home";
+@import "../scss/transportation";
+@import "../scss/header";
+@import "../scss/services";
+@import"../scss/company";
+@import"../scss/footer";

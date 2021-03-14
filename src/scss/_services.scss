@@ -1,0 +1,58 @@
+.services {
+   background: #2F343A;
+   width: 100%;
+   padding: 120px 200px 120px;
+
+
+   &__block {
+      width: 970px;
+      height: 330px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__card {
+      width: 25%;
+      background: #393F47;
+      border: 1px solid #2F343A;
+      position: relative;
+
+      &:hover {
+         background: #C8A35F;
+
+         &::before {
+            content: '';
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff url(../images/servicess/airoplane-black.png) center center no-repeat;
+         }
+      }
+
+      &::before {
+         content: '';
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: url(../images/servicess/airoplane-white.png) center center no-repeat;
+      }
+
+   }
+
+
+
+   &__text {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 130px;
+   }
+
+
+}

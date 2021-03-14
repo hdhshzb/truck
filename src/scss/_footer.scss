@@ -1,0 +1,30 @@
+.footer{
+    background: #C8A35F;
+    width: 100%;
+
+    .row{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 60px 100px;
+
+        .col{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            &-3{
+                align-self: flex-end;
+                margin-left: 150px;
+            }
+        }
+    }
+
+    &__link{
+        color:#fff ;
+        text-decoration: none;
+
+        &-black{
+            color: black ;
+        }
+    }
+}
